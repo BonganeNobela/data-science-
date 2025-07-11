@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2>Analysis History</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Text</th>
+                <th>Sentiment</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for item in analyses %}
+            <tr>
+                <td>{{ item.id }}</td>
+                <td>{{ item.text }}</td>
+                <td>{{ item.sentiment }}</td>
+                <td><a href="{{ url_for('delete', id=item.id) }}">Delete</a></td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

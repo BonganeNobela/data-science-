@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f8fb;
+}
+
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin-right: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+textarea {
+    width: 60%;
+    height: 100px;
+}
+
+button {
+    padding: 8px 16px;
+    background: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
